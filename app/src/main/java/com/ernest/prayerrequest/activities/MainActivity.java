@@ -28,20 +28,21 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViews() {
         sm.setOnItemSelectedListener(new OnItemSelectedListener() {
+            Intent intent;
             @Override
             public void onItemSelect(int pos) {
                 switch (pos){
                     case 0:
-                        Intent home = new Intent(MainActivity, MainActivity.class);
-                        startActivity(home);
+                        intent = new Intent(MainActivity.this, MainActivity.class);
+                        startActivity(intent);
                         break;
                     case 1:
-                        Intent newsletter = new Intent(this, Newsletter.class);
-                        startActivity(newsletter);
+                        intent = new Intent(MainActivity.this, Newsletter.class);
+                        startActivity(intent);
                         break;
                     case 2:
-                        Intent profile = new Intent(this, Profile.class);
-                        startActivity(profile);
+                        intent = new Intent(MainActivity.this, Profile.class);
+                        startActivity(intent);
                         break;
                 }
 

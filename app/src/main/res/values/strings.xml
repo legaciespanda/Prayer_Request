@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-    <item name="androidx.core.view.inputmethod.EditorInfoCompat int getProtocol(android.view.inputmethod.EditorInfo)">
-        <annotation name="androidx.annotation.IntDef">
-            <val name="
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prayer Request</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_newsletter">News Letter</string>
+    <string name="menu_profile">Profile</string>
+</resources>
