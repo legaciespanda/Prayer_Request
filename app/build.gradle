@@ -11,6 +11,10 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -29,5 +33,8 @@ dependencies {
 
     implementation 'com.github.OmarShehe.FormInputs:forminputkotlin:1.0.2'
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7'
+
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
 }
