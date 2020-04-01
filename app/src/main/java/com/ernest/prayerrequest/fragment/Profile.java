@@ -15,12 +15,15 @@ import android.view.ViewGroup;
 import com.ernest.prayerrequest.R;
 import com.ernest.prayerrequest.activities.MainActivity;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
  * A simple {@link Fragment} subclass.
  */
 public class Profile extends Fragment {
     private View root_view, parent_view;
     private MainActivity mainActivity;
+    CircleImageView profile_images;
 
 
     public Profile() {

@@ -3,16 +3,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".fragment.Prayer">
 
-
-    <TextView
+    <com.omarshehe.forminputkotlin.FormInputText
+        android:id="@+id/fullName"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorOrange"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:text="Prayer Fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:form_height="40dp"
+        app:form_hint="Prayer request title"
+        app:form_inputType="text"
+        app:form_isMandatory="true"
+        app:form_label="Prayer Request Title" />
+
+    <com.omarshehe.forminputkotlin.FormInputMultiline
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:form_height="100dp"
+        app:form_hint="Prayer request"
+        app:form_isMandatory="true"
+        app:form_label="Prayer Request"
+        app:form_maxLength="500"/>
+
+    <com.omarshehe.forminputkotlin.FormInputButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:form_background="@color/colorPrimary"
+        app:form_cornerRadius="100"
+        app:form_height="55dp"
+        app:form_progressColor="@color/colorPrimary"
+        app:form_showProgress="true"
+        app:form_textColor="@color/white"
+        app:form_value="@string/Submit"
+        app:form_valueOnLoad="Please, wait.." />
 
 </LinearLayout>

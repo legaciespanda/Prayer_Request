@@ -6,4 +6,7 @@
 
   <color name="colorTextPrimary">#ffffff</color>
   <color name="colorTextSecondary">#A3FFFFFF</color>
+
+  <color name="colorBlack">#000000</color>
+  <color name="colorWhiteman">#FFFFFF</color>
 </resources>
